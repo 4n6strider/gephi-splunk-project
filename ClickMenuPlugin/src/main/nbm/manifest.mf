@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Name: Click Menu Plugin
+OpenIDE-Module-Short-Description:  
+OpenIDE-Module-Long-Description:  
+OpenIDE-Module-Display-Category: Tool

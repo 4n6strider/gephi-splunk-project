@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Name: Click Menu Plugin
+OpenIDE-Module-Short-Description:  
+OpenIDE-Module-Long-Description:  
+OpenIDE-Module-Display-Category: Tool
+OpenIDE-Module-Specification-Version: 1.0.0
+OpenIDE-Module-Implementation-Version: 1.0.0
+OpenIDE-Module-Build-Version: 201608012208
+OpenIDE-Module: splunk.click.menu.plugin
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+OpenIDE-Module-Module-Dependencies: org.gephi.visualization.api > 0.9.
+ 1, org.gephi.tools.api > 0.9.1, org.openide.util.lookup > 8.32.1, org
+ .gephi.graph.api > 0.9.1, org.gephi.visualization > 0.9.1, org.gephi.
+ layout.plugin > 0.9.1, org.gephi.ui.library.wrapper > 0.9.1, org.geph
+ i.layout.api > 0.9.1
+

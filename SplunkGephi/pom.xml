@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>gephi-plugin-parent</artifactId>
+        <groupId>org.gephi</groupId>
+        <version>0.9.1</version>
+    </parent>
+
+    <groupId>splunk.foo</groupId>
+    <artifactId>splunk-gephi</artifactId>
+    <version>1.0.0</version>
+    <packaging>nbm</packaging>
+
+    <name>Splunk Gephi</name>
+
+  <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>appearance-api</artifactId>
+      <version>0.9.1</version>
+      
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>appearance-plugin</artifactId>
+      <version>0.9.1</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>gephi-toolkit</artifactId>
+      <version>0.9.2-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>filters-api</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>graph-api</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>filters-plugin</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>io-exporter-api</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>io-importer-api</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>io-processor-plugin</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>layout-plugin</artifactId>
+      <version>0.9.1</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>preview-api</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>project-api</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>statistics-plugin</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-util-lookup</artifactId>
+      <version>RELEASE81</version>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-util</artifactId>
+      <version>RELEASE81</version>
+    </dependency>
+  </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <licenseName>Apache 2.0</licenseName>
+                    <author>Yue Kang</author>
+                    <authorEmail></authorEmail>
+                    <authorUrl></authorUrl>
+                    <sourceCodeUrl>$sourcecode_url</sourceCodeUrl>
+                    <publicPackages>
+                        <!-- Insert public packages -->
+                    </publicPackages>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+

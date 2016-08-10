@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Name: Splunk Gephi
+OpenIDE-Module-Short-Description: access server to visualize data
+OpenIDE-Module-Long-Description: access server for data. Visualize the data
+OpenIDE-Module-Display-Category: Import

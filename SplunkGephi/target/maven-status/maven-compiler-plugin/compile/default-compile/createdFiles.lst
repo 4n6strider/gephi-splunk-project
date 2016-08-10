@@ -1,0 +1,8 @@
+org/gephi/plugins/example/submenu/Bundle.class
+org/gephi/plugins/example/submenu/Splunk.class
+org/gephi/plugins/example/submenu/HeadlessSimple.class
+META-INF/generated-layer.xml
+org/gephi/plugins/example/submenu/Bundle.java
+org/gephi/plugins/example/submenu/TestAction2.class
+org/gephi/plugins/example/submenu/TestAction.class
+org/gephi/plugins/example/submenu/Bundle.properties
