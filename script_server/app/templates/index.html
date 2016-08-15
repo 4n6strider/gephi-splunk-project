@@ -1,0 +1,34 @@
+<head>
+    <title>Script Server</title>
+</head>    
+<body>
+    <h1>Script Server</h1>
+    <h3>Add a script to this server. You will need to update permissions on the GSS server to run this script in gephi.</h3>
+    <a href="/add_script">Add a script.</a>
+    <h3>Build a script by entering a splunk search and any arguments the search requires (the script will be automatically added to this script server)</h3>
+        <ul>
+            <p>This script builder currently only supports up to 3 arguments. Arguments should be denoted in the splunk search by replacing the argument value by $$ARG1$$. The number following ARG should be a number 1-3 that corresponds to the ARGx values you enter in the form below.</p>
+            <b><p>Example splunk search:</p></b>
+            <ul>
+                <p>search sourcetype=bank src_ip=$$ARG1$$ | dedup src_ip | table src_ip | iplocation src_ip | table Country, City, Region</p>
+            </ul>
+            <b><p>Example ARG1 value:</p></b>
+            <ul>
+                <p>123.123.123.123</p>
+            </ul>
+            <b><p>Example ARG2 and ARG3 values:</p></b>
+            <ul>
+                <p>Leave Blank</p>
+            </ul>
+        </ul>
+     <form action="/build_script" method="POST">
+            <input type="text" name="search" placeholder="Splunk Search">
+            <input type="text" name="name" placeholder="Script name">
+            <input type="text" name="username" placeholder="Splunk instance username">
+            <input type="text" name="password" placeholder="Splunk instance password">
+            <input type="text" name="arg1" placeholder="ARG1">
+            <input type="text" name="arg2" placeholder="ARG2">
+            <input type="text" name="arg3" placeholder="ARG3">
+            <input type="submit" name="my-form" value="Enter">
+    </form>
+</body>

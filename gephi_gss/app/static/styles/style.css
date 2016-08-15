@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.script_inner {
+    text-align: left;
+}
+.main_body {
+    padding-right: 30px;
+    margin: 0 auto;
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+#logo {
+    float: left;
+    padding-right: 30px;
+    margin-left: 30px;
+    margin-top: 16px;
+    text-decoration: none;
+    color: white;
+}
+/*.footer {
+    width: 100%;
+    background-color: black;
+    height: 30px;
+    bottom: 0;
+    position: absolute;
+}*/
+
+.options {
+    float: right;
+    width: 600px;
+    height: 50px;
+    background-color: black;
+}
+
+.option {
+    float: right;
+    margin-right: 200px;
+    padding-top: 5px;
+    color: white;
+    text-decoration: none;
+}
+.api_title {
+    text-align: center
+}
+.api_descrip {
+    text-align: left;
+    border: 1px solid black;
+    padding-left: 30px;
+}

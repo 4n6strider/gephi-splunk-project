@@ -1,0 +1,4 @@
+adoglases|1466980810|username█
+992D6E4035877D779DE160E41D06|1466980810|session_id█
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)|1466980810|useragent█
+nivglases|1466980663|username█

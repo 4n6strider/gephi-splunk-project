@@ -1,0 +1,5 @@
+afrmtl|1467006288|username█
+FF1659F9A5D0DDECD63C65CF82C4|1467006288|session_id█
+Mozilla/5.0 (Windows NT 6.1; rv:33.0) Gecko/20100101 Firefox/33.0|1467006288|useragent█
+rebir|1467006288|username█
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)|1467006288|useragent█

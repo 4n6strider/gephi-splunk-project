@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Gephi-Splunk Permissions Server</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <a href="/"><h1 id="logo">Permissions Server</h1></a>
+            <a href="/permissions"><h3 class="option">Permissions</h3></a>
+            <a href="/admin"><h3 class="option">Administration</h3></a>
+            <a href="/script"><h3 class="option">Script</h3></a>
+        </div>
+        <div class="main_body">
+            <h1>Gephi-Splunk Permissions Server</h1>
+            <p>This server administrates access to scripts held on another server and returns the Splunk output of those scripts to Gephi.</p>
+            <h2 class="api_title">REST API:</h2>
+            <div class="api_descrip">
+                <h3>Get available actions for a certain group:</h3>
+                <p>Make a get request using the format below, this will return a comma seperated list of groups. Each element of the list is in this format "nameofscript-scriptextension" use the "-" as a delimiter.</p>
+                    <ul>
+                        <p>GET 127.0.0.1:5000/permissions/GROUPNAME (url may be different based on port, localhost, etc.)</p>
+                        <p>Sample groups are "accounting" and "security".</p>
+                    </ul>
+                <br>
+                <br>
+                <h3>Run a script and get result:</h3>
+                <p>Make a get request using the format below, this will return a csv of the selected script, without the headers. CSV header field format to be determined later, but current schema is destination, source, weight.</p>
+                    <ul>
+                        <p>GET 127.0.0.1:5000/script/SCRIPTNAME/SCRIPTTPYE (py, sh, etc.)" (url may be different based on port, localhost, etc.)</p>
+                    </ul>
+                <br>
+                <br>
+                <h3>Get an example CSV file to construct a graph in Gephi</h3>
+                <p>This is split into two requests, the first is for the list of nodes, and the other for the list of edges.</p>
+                    <ul>
+                        <p>GET 127.0.0.1:5000/graph/GRAPHNAME/nodes (url may be different based on port, localhost, etc.)</p>
+                        <h4>Example</h4>
+                            <a href="http://127.0.0.1:5000/graph/lesmiserables/nodes"><p>GET 127.0.0.1:5000/graph/lesmiserables/nodes</p></a>
+                        <h3>AND</h3>
+                            <p>GET 127.0.0.1:5000/graph/GRAPHNAME/edges (url may be different based on port, localhost, etc.)</p>
+                        <h4>Example</h4>
+                            <a href="http://127.0.0.1:5000/graph/lesmiserables/edges"><p>GET 127.0.0.1:5000/graph/lesmiserables/edges</p></a>
+                    </ul>
+                <br>
+                <br>
+                <h3>Get an example GML file to construct a graph in Gephi</h3>
+                    <ul>
+                        <p>GET 127.0.0.1:5000/graph/GRAPHNAME (url may be different based on port, localhost, etc.)</p>
+                        <h4>Example</h4>
+                            <a href="http://127.0.0.1:5000/graph/lesmiserables"><p>GET 127.0.0.1:5000/graph/lesmiserables</p></a>
+                    </ul>
+                <br>
+                <br>
+                <h3>Run an action on a node</h3>
+                <p>Make a get request using the following format to run a splunk search and return the results of that search. Requires an action, the name of the node, and the name of the graph</p>
+                    <ul>
+                        <p>GET http://127.0.0.1:5000/graph/GRAPHNAME/NODENAME/ACTION (url may be different based on port, localhost, etc.)</p>
+                        <h4>Example</h4>
+                            <a href="http://127.0.0.1:5000/graph/lesmiserables/node/adduseragent"><p>GET http://127.0.0.1:5000/graph/lesmiserables/node/adduseragent</p></a>
+                    </ul>            
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    <body>
+</html>

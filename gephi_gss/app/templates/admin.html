@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Gephi-Splunk Permissions Server</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <a href="/"><h1 id="logo">Permissions Server</h1></a>
+            <a href="/permissions"><h3 class="option">Permissions</h3></a>
+            <a href="/admin"><h3 class="option">Administration</h3></a>
+            <a href="/script"><h3 class="option">Script</h3></a>
+        </div>
+        <div class="main_body">
+            <h1>Settings:</h1>
+            <div class="script_inner">
+                <ul>
+                    <h2>Remove a script from a node type</h2>
+                    <h4>Select the script you wish to remove from the node type.</h4>
+                    <form action="/admin/remove" method="POST">
+                        <input type="text" name="group" placeholder="Node type">
+                        <input type="text" name="script" placeholder="Script name">
+                        <input type="submit" name="my-form" value="Enter">
+                    </form>
+                    <br>
+                    <br>
+                    <h2>Add a script to a node type</h2>
+                    <h4>Enter the name of script you want to add and the node type it belongs to.</h4>
+                    <form action="/admin/add" method="POST">
+                        <input type="text" name="group" placeholder="Node type">
+                        <input type="text" name="script" placeholder="Script name">
+                        <input type="submit" name="my-form" value="Enter">
+                    </form>
+                    <br>
+                    <br>
+                    <h2>Add a node type</h2>
+                    <h4>Enter the name of the node type you want to add.</h4>
+                    <form action="/admin/addgroup" id="group" method="POST">
+                        <input type="text" name="text" placeholder="Node type">
+                        <input type="submit" name="my-form" value="Enter">
+                    </form>
+                    <br>
+                    <br>
+                    <h2>Remove a node type</h2>
+                    <h4>Enter the name of the node type you want to remove.</h4>
+                    <form action="/admin/removegroup" method="POST">
+                        <input type="text" name="text" placeholder="Node type">
+                        <input type="submit" name="my-form" value="Enter">
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    <body>
+</html>
