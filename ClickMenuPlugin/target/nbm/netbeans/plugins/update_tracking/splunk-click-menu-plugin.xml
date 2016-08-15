@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="splunk.click.menu.plugin">
+    <module_version install_time="1470089302498" last="true" origin="installer" specification_version="1.0.0">
+        <file crc="1465397546" name="config/Modules/splunk-click-menu-plugin.xml"/>
+        <file crc="1280524979" name="modules/splunk-click-menu-plugin.jar"/>
+    </module_version>
+</module>

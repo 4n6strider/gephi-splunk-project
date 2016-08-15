@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="splunk.foo.splunk.gephi">
+    <module_version install_time="1470849546903" last="true" origin="installer" specification_version="1.0.0">
+        <file crc="3995977840" name="config/Modules/splunk-foo-splunk-gephi.xml"/>
+        <file crc="695777704" name="modules/ext/splunk.foo.splunk-gephi/org-gephi/gephi-toolkit.jar"/>
+        <file crc="1461031690" name="modules/splunk-foo-splunk-gephi.jar"/>
+    </module_version>
+</module>

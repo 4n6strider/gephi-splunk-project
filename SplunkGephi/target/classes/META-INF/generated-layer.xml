@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="File">
+            <file name="org-gephi-desktop-filters-TestAction2.instance">
+                <!--org.gephi.plugins.example.submenu.TestAction2-->
+                <attr
+                    bundlevalue="org.gephi.plugins.example.submenu.Bundle#CTL_TestAction2" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.gephi.plugins.example.submenu.TestAction2"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="org-gephi-desktop-filters-TestAction.instance">
+                <!--org.gephi.plugins.example.submenu.TestAction-->
+                <attr
+                    bundlevalue="org.gephi.plugins.example.submenu.Bundle#CTL_TestAction" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="org.gephi.plugins.example.submenu.TestAction"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Plugins">
+            <file name="org-gephi-desktop-filters-TestAction2.shadow">
+                <!--org.gephi.plugins.example.submenu.TestAction2-->
+                <attr name="originalFile" stringvalue="Actions/File/org-gephi-desktop-filters-TestAction2.instance"/>
+                <attr intvalue="3333" name="position"/>
+            </file>
+            <file name="org-gephi-desktop-filters-TestAction.shadow">
+                <!--org.gephi.plugins.example.submenu.TestAction-->
+                <attr name="originalFile" stringvalue="Actions/File/org-gephi-desktop-filters-TestAction.instance"/>
+                <attr intvalue="3333" name="position"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>
