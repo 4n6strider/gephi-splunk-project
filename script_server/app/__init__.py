@@ -116,7 +116,8 @@ def ret_action(scriptname, scripttype, action, node):
 
 
                 for i,user in enumerate(users):
-                    session_id = session_ids[i]
+                    if i < len(session_ids):
+                        session_id = session_ids[i]
 
                     if user not in user_dict:
                         g.write(user + "|" + times[i] + "|" + "username█\n")
