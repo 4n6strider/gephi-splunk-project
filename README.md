@@ -106,6 +106,8 @@ The data for the second screenshot is populated from the SplunkGephi plugin. Thi
 You can also choose to import data directly from Splunk by making a call to the server. 
   - To do this, set your headers and URL in Splunk.java, and call the method from TestAction.java. Then follow the same instructions as were provided to alter "Click Menu Plugin, using “mvn clean package” and reinstalling the plugin.
 
+If you wish to use other datasets (other than IP addresses, usernames, session IDs, and user agents), then you will need to modify some of the code within AddNodesTool.java of the ClickMenuPlugin and TextManager.java of Gephi sourcecode (file provided in "ModifiedClasses" directory). Specifically, the AddNodesTool class implements the node drilldown, collapse, and expand logic, and the TextManager class dictates what icon will be used based on the gephi data column, "nodetype". 
+
 #Expanding on the basic demos
 To be more clear on what format Gephi expects, I will break down the two possibilities. 
 
