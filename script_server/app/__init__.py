@@ -74,7 +74,7 @@ def index():
 @app.route("/scripts/<scriptname>/<scripttype>/<action>/<node>")
 def ret_action(scriptname, scripttype, action, node):
     if action == "ipinf":
-        subprocess.call(["dos2unix", ("templates/" + scriptname + "." + scripttype)])
+        #subprocess.call(["dos2unix", ("templates/" + scriptname + "." + scripttype)])
         output = subprocess.check_output(["python", "templates/" + scriptname + "." + scripttype, node])
 	
         count = 0
@@ -140,7 +140,7 @@ def ret_action(scriptname, scripttype, action, node):
         return "".join(contents)
 
     if action == "adduseragent":
-        subprocess.call(["dos2unix", ("templates/" + scriptname + "." + scripttype)])
+        #subprocess.call(["dos2unix", ("templates/" + scriptname + "." + scripttype)])
         output = subprocess.check_output(["python", "templates/" + scriptname + "." + scripttype, node])
 
         f = open("addresult.txt", "w")
@@ -163,7 +163,7 @@ def ret_action(scriptname, scripttype, action, node):
         return ''.join(contents)
 
     if action == "iplocation":
-        subprocess.call(["dos2unix", "templates/" + scriptname + "." + scripttype])
+        #subprocess.call(["dos2unix", "templates/" + scriptname + "." + scripttype])
         output = subprocess.check_output(["python", "templates/" + scriptname + "." + scripttype, node])
         res = ""
         count = 0
@@ -206,7 +206,7 @@ def ret_script(scriptname, scripttype):
     else:
         return "Script not supported"
 
-    subprocess.call(["dos2unix", "templates/" + scriptname + "." + scripttype])
+    #subprocess.call(["dos2unix", "templates/" + scriptname + "." + scripttype])
     output = subprocess.check_output([cl_arg, "templates/" + scriptname + "." + scripttype])
 
     f = open("templates/nodes.txt", "w")
