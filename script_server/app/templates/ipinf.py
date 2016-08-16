@@ -6,7 +6,7 @@ import splunklib.results as results
 HOST = "localhost"
 PORT = 8089
 USERNAME = "admin"
-PASSWORD = "nicstone"
+PASSWORD = "password"
 
 service = client.connect(
     host=HOST,
